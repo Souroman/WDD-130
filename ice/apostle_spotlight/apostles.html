@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body{
+            background-color: #e8eced;
+        }
+        h1{
+            text-align: center;
+            color: #e8eced;
+            background-color: #5588cc;
+            border:#e8eced 5px solid;
+            width: 300px;
+            border-radius: 20px;
+            font-family: "arial";
+        }
+
+        h2{
+            text-align: center;
+            color: #e8eced;
+            background-color: #5588cc;
+            border:#e8eced 5px solid;
+            width: 400px;
+            border-radius: 20px;
+            font-family: "arial";
+        }
+        #firstprespics{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            place-items: center;
+
+        }
+        #backcard{
+            background-image: url("images/christus.webp");
+            background-size: cover;
+            width: 80%;
+            border: 10px black solid;
+            border-radius: 20px;
+            margin: 50px 10% 50px 10%;
+            place-items: center;
+        }
+        #quorumpics{
+            display: grid;
+            width: 500px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            place-items: center;
+            margin-bottom: 50px;
+        }
+        img{
+            border: 5px #eeeeff solid;
+            border-radius: 100px 100px 0% 0%;
+            object-fit: cover;
+            height: 100px;
+            width: 100px;
+            object-position: center;
+        }
+        img:hover{
+            border: 5px #003388 solid;
+            transform: scale(1.5);
+            transition: transform 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="backcard">
+        <h1>
+            First Presidency
+        </h1>
+        <div id="firstprespics">
+            <img id="eyring" src="images/eyring.webp" alt="Henry B Eyring">
+            <img id="oaks" src="images/oaks.webp" alt="Dallin H Oaks">
+            <img id="anderson" src="images/anderson.webp" alt="Niel L Anderson">
+        </div>
+        <h2>
+            Quorum of the Twelve Apostles
+        </h2>
+        <div id="quorumpics">
+            <img id="uchtdorf" src="images/uchtdorf.webp" alt="Dieter F Uchtdorf">
+            <img id="bednar" src="images/bednar.webp" alt="David A Bednar">
+            <img id="cook" src="images/cook.webp" alt="Quentin L Cook">
+            <img id="anderson" src="images/anderson.webp" alt="Neil L Andersen">
+            <img id="rasband" src="images/rasband.webp" alt="Ronald A Rasband">
+            <img id="stevenson" src="images/stevenson.webp" alt="Gary E Stevenson">
+            <img id="renlund" src="images/renlund.webp" alt="Dale G Renlund">
+            <img id="gong" src="images/gong.webp" alt="Gerrit W Gong">
+            <img id="soares" src="images/soares.webp" alt="Ulisses Soares">
+            <img id="kearon" src="images/kearon.webp" alt="Patrick Kearon">
+            <img id="causse" src="images/causse.webp" alt="Gerald Causse">
+            <img id="gilbert" src="images/gilbert.webp" alt="Clark G Gilbert">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table class="devo-table">
+          <tr id="heading">
+            <th>
+              Title
+            </th>
+            <th>
+              Speaker
+            </th>
+            <th>
+              Location
+            </th>
+            <th>
+              Date
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Things as They Really Are 2.0
+            </td>
+            <td>
+              David A. Bednar
+            </td>
+            <td>
+              BYUI
+            </td>
+            <td>
+              Nov 3, 2024
+            </td>
+          </tr>
+          <tr>
+            <td>
+              The Mission of BYU-Idaho
+            </td>
+            <td>
+              Alvin F. Meredith
+            </td>
+            <td>
+              BYUI
+            </td>
+            <td>
+              Sept 15, 2026
+            </td>
+          </tr>
+          <tr>
+            <td>
+              BYU-Idaho 25th Anniversary Devotional
+            </td>
+            <td>
+              David A. Bednar
+            </td>
+            <td>
+              BYUI
+            </td>
+            <td>
+              Oct 8, 2026
+            </td>
+          </tr>
+        </table>
+        <form>
+          <label for="title">Title</label>
+          <input type="text" id="title" required placeholder="First Vision">
+
+          <label for="speaker">Speaker</label>
+          <input type="text" id="speaker" required placeholder="Joseph Smith Jr.">
+          
+          <label for="location">Location</label>
+          <input type="text" id="location" required placeholder="Sacred Grove">
+
+          <label for="date">Date</label>
+          <input type="date" id="date" required>
+
+          <input type="submit" value="Add Devo">
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

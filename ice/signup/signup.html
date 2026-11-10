@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+        #signup-box-holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            margin: 2rem auto;
+            width: 50%;
+            border: 2rem solid navy;
+            border-radius: 5rem;
+            position: relative;
+            box-shadow: 1rem 1rem 1rem black;
+            }
+
+        #title-holder {
+            text-align: center;
+            color: white;
+            background-image: url("images/jesus_feeds_5000.jpeg");
+            background-size: cover;
+            background-position: center top;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 1rem 1rem 0 0;
+            border-bottom: 1rem solid navy;
+            z-index: -1;
+            margin: 0;
+        }
+
+        #title {
+            font-size: 5rem;
+            font-family:'Times New Roman', Times, serif;
+            margin: 10rem 0 -1rem 0;
+            text-shadow: 0.2rem 0.2rem 0.2rem black;
+        }
+
+        #subtitle {
+            font-size: 4rem;
+            font-family:'Times New Roman', Times, serif;
+            text-shadow: 0.2rem 0.2rem 0.2rem black;
+            margin: 0 2rem 2rem 2rem;
+        }
+
+        #formContainer {
+            background-color: antiquewhite;
+            position: static;
+        }
+
+        #myForm {
+            display: grid;
+            font-size: 1.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            color: navy;
+            grid-template-columns: auto 1fr;
+            gap: 1rem;
+            padding: 0 3rem 0 3rem;
+            text-align: right;
+        }
+
+        #closeBtn {
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: white;
+            color: navy;
+            border: 0.1rem solid navy;
+            border-radius: 100%;
+            cursor: pointer;
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            box-shadow: 0.2rem 0.2rem 0.2rem black;
+        }
+
+        #formtitle {
+            font-size: 2.5rem;
+            font-family:'Times New Roman', Times, serif;
+            text-align: justify;
+            text-align-last: justify;
+            color: navy;
+            margin: 0;
+            background-color: antiquewhite;
+            padding: 2rem 3rem 2rem 3rem;
+            text-shadow: 0.1rem 0.1rem 1rem white;
+        }
+
+        .genderlabel {
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        #scriptureimg-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+            padding: 3rem;
+            background-color: antiquewhite;
+            margin: 0;
+            border-radius: 0 0 1rem 1rem;
+            z-index: -1;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.25rem;
+        }
+
+        #submitbtn {
+            font-size: 3rem;
+            font-family: 'Times New Roman', Times, serif;
+            color: navy;
+            background-color: white;
+            border: 0.1rem solid navy;
+            border-radius: 0.5rem;
+            padding: 0;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0.2rem 0.2rem 0.2rem black;
+        }
+
+        #submitbtn-section {
+            grid-column: 1 / 3;
+            width: 100%;
+        }
+
+        #newsletter-section, #conditions-section {
+            grid-column: 1 / 3;
+            text-align: justify;
+            align-items: center;
+            width: 65%;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div id="signup-box-holder">
+        <div id="title-holder">
+            <h1 id="title">
+                Daily Feed
+            </h1>
+            <h2 id="subtitle">
+                Scripture a Day
+            </h2>
+        </div>
+        <div id="formContainer">
+            <h3 id="formtitle">
+                Sign Up for Daily Scripture Feed
+            </h3>
+            <form id="myForm">
+                <button type="button" id="closeBtn">X</button>
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label>Gender:</label>
+                <div class="genderlabel">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label class="genderlabel"for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label class="genderlabel" for="female">Female</label>
+                </div>
+                <section id="newsletter-section">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to newsletter</label>
+                </section>
+                <section id="conditions-section">
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    <label for="conditions">I acknowledge the terms and conditions</label>
+                </section>
+                <section id="submitbtn-section">
+                    <button id="submitbtn" type="submit">Submit</button>
+                </section>
+            </form>
+        </div>
+        <div id="scriptureimg-container">
+            <img src="images/old_testament.webp" alt="Old Testament">
+            <img src="images/new_testament.webp" alt="New Testament">
+            <img src="images/book_of_mormon.webp" alt="Book of Mormon">
+            <img src="images/doctrine_and_covenants.webp" alt="Doctrine and Covenants">
+            <img src="images/pearl_of_great_price.webp" alt="Pearl of Great Price">
+        </div>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        // Here is some Javascript to start looking forward to wdd131
+        document.getElementById("closeBtn").addEventListener("click", function () {
+            document.getElementById("formContainer").style.display = "none";
+         });
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop form from actually submitting
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+                if (key == "password") {
+                    entries.push(`<strong>${key}</strong>: ${value} (you should probably encrypt the password)`);
+                } else {
+                    entries.push(`<strong>${key}</strong>: ${value}`);
+                }
+            }
+
+            output.innerHTML = `
+            <br>  
+            <h3>Here is the data that would be sent to the server:</h3>
+            <ul>
+                ${entries.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            `;
+                });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+body {
+    background-color: #090600;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    width: 100%;
+    height: 25%;
+    background-color: #c2a165;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin: 0;
+    border-bottom: 0.5rem solid #090600;
+}
+
+#logo {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem auto 1rem 1rem;
+}
+
+#homelink {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: #090600;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    margin: 5%;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+#wwrlink {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: #090600;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    margin: 5%;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+#icelink {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: #090600;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    margin: 5%;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+#melink {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: #090600;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    margin: 5%;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+#homelink:hover {
+    text-align: center;
+    color: #090600;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    margin: 0;
+    transform: scale(1.5);
+}
+
+#wwrlink:hover {
+    text-align: center;
+    color: #090600;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    margin: 0;
+    transform: scale(1.5);
+}
+
+#icelink:hover {
+    text-align: center;
+    color: #090600;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    margin: 0;
+    transform: scale(1.5);
+}
+
+#melink:hover {
+    text-align: center;
+    color: #090600;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    margin: 0;
+    transform: scale(1.5);
+}
+
+#title-holder {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: none;
+    width: 75%;
+    margin: 5rem auto;
+    align-content: start;
+}
+
+#title {
+    text-align: center;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    width: 100%;
+    height: 50%;
+    color: #c2a165;
+    margin: 0;
+    font-size: 1000%;
+}
+
+#subtitle {
+    text-align: justify;
+    text-align-last: justify;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 400%;
+    color: #c2a165;
+    margin: 0;
+    text-justify: inter-word;
+}
+
+#title-bar-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+#title-bar {
+    width: 100%;
+    margin: 0;
+}
+
+#recent-works {
+    display: grid;
+    margin: 5rem auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    place-items: center;
+    background-color: #c2a165;
+    width: 75%;
+    column-gap: 1rem;
+    border-left: 1rem solid #c2a165;
+    border-right: 1rem solid #c2a165;
+}
+
+#rwheader {
+    text-align: center;
+    color: #090600;
+    background-color: #c2a165;
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 500%;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / -1;
+    margin: 1rem 0 -0.5rem 0;
+}
+
+#rwimage1 {
+    width: 80%;
+    height: auto;
+    margin: 1rem;
+    grid-column: 1;
+    grid-row: 2;
+    border: 2rem double #090600;
+}
+
+#rwimage2 {
+    width: 80%;
+    height: auto;
+    margin: 1rem;
+    grid-column: 2;
+    grid-row: 2;
+    border: 2rem double #090600;
+}
+
+#rwimage3 {
+    width: 80%;
+    height: auto;
+    margin: 1rem;
+    grid-column: 3;
+    grid-row: 2;
+    border: 2rem double #090600;
+}
+
+[id^="rwtitle"] {
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    text-align: center;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+[id^="rwtitle"]:hover {
+    transform: scale(1.5);
+}
+
+[id^="rwdesc"] {
+    font-family: "Times New Roman", Times, serif;
+    text-align: justify;
+    text-indent: 1em;
+    margin: 1rem 0;
+}
+
+#latest-work {
+    background-color: #c2a165;
+    width: calc(75% + 2rem);
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto 5rem;
+}
+
+#lwheader{
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 600%;
+    text-align: center;
+    grid-column: 1 / -1;
+    margin: 1rem auto 0 auto;
+}
+
+#lwtext {
+    display: flex;
+    flex-direction: column;
+}
+
+#lwtitle {
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 400%;
+    text-align: left;
+    margin: 1rem auto 0 1rem;
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+#lwtitle:hover {
+    transform: scale(1.25);
+}
+
+#lwdesc {
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+    text-indent: 3em;
+    margin: 0 auto 0 1rem;
+    text-align: justify;
+}
+
+#lwimage {
+    width: 80%;
+    height: auto;
+    margin: 1rem;
+    grid-column: 2;
+    grid-row: 2;
+    border: 2rem double #090600;
+}
+
+#ice-challenge-desc {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 150%;
+    text-align: justify;
+    text-align-last: center;
+    margin: 2rem auto 1rem auto;
+    width: 75%;
+    background-color: #c2a165;
+    border: 2rem double #090600;
+    padding: 1rem;
+}
+
+#icecard-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    align-content: center;
+    width: 90%;
+}
+
+.ice-card {
+    background-color: #c2a165;
+    margin: 0 auto;
+    border: 2rem double #090600;
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 15rem;
+    grid-template-rows: auto;
+}
+
+.icecard-textholder {
+    display: flex;
+    flex-direction: column;
+}
+
+.ice-header {
+    font-family: "Limelight", "Times New Roman", Times, serif;
+    font-size: 200%;
+    text-align: left;
+    color: #090600;
+    margin: 0;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.ice-header:hover {
+    transform: scale(1.1);
+}
+
+.ice-desc {
+    font-family: "Times New Roman", Times, serif;
+    text-align: justify;
+    text-indent: 1em;
+    margin: 0;
+}
+
+.ice-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ice-image {
+    position: absolute;
+    min-height: 0; 
+    min-width: 0;    
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border: 2rem double #090600;
+    grid-column: 2;
+    box-sizing: border-box;
+}
